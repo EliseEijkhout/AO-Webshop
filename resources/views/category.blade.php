@@ -1,11 +1,14 @@
 @extends('layouts.app')
 
 @section('content')
+
 <div class="container">
+    <a href="/home">Home</a>
+                    
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">Home</div>
+                <div class="card-header">Categories</div>
 
                 <div class="card-body">
                     @if (session('status'))
@@ -13,10 +16,13 @@
                             {{ session('status') }}
                         </div>
                     @endif
-                    <a href="/category">Ga naar de Categories!</a> <br>
 
-                    You are logged in!
                     
+                    @foreach ($categories as $category)
+                    <p>{{ $category->name }}</p>
+                    @endforeach
+
+
                 </div>
             </div>
         </div>
