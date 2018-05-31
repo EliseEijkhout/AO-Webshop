@@ -14,6 +14,7 @@
                         </div>
                     @endif
                     <a href="/category">Ga naar de Categories!</a> <br>
+                    <a href="/product">Ga naar de Products!</a> <br>
 
                     You are logged in!
                     

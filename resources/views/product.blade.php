@@ -8,7 +8,7 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">Categories</div>
+                <div class="card-header">Producten</div>
 
                 <div class="card-body">
                     @if (session('status'))
@@ -18,8 +18,8 @@
                     @endif
        
                     
-                    @foreach ($categories as $category)
-                    <p>{{ $category->name }}</p>
+                    @foreach ($producten as $product)
+                    <p>{{ $product->name }}</p>
                     @endforeach
 
 
