@@ -8,9 +8,9 @@ use DB;
 
 class Category extends Model
 {
-	protected $table = 'categories';
+	protected $table = 'category';
 
-	public function product(){
+	public function products(){
 
 		return $this->belongsToMany('App\Product','product_category','category_id');
 	}

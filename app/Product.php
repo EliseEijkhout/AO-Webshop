@@ -7,11 +7,11 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 
 class Product extends Model
 {
-    protected $table = 'producten';
+    protected $table = 'products';
 
-    	public function categories(){
+    public function categories(){
 
-		return $this->belongsToMany('App\Category','product_category','product_id');
+		return $this->belongsToMany('App\Category','products_categories','product_id');
 	}
-}
+
 }

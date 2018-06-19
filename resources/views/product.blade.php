@@ -18,7 +18,7 @@
                     @endif
        
                     
-                    @foreach ($producten as $product)
+                    @foreach ($products as $product)
                     <p>{{ $product->name }}</p>
                     @endforeach
 

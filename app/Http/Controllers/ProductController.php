@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Category;
 use DB;
 
 class ProductController extends Controller
@@ -27,7 +28,14 @@ class ProductController extends Controller
         {
             $producten = DB::table('products')->get();
 
-            return view('product', ['producten' => $producten]);
+            return view('product', ['products' => $products]);
         }
+    }
+    public function categoryIndex($categoryid)
+    {
+        $category = Category::find($categoryid);
+        foreach ($category->products as $product) {
+                    var_dump($product);
+                }        
     }
 }
