@@ -3,8 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Category;
-use DB;
+use App\Product;
+
 
 class ProductController extends Controller
 {
@@ -26,7 +26,7 @@ class ProductController extends Controller
     public function index()
     {
         {
-            $producten = DB::table('products')->get();
+            $products = Product::all();
 
             return view('product', ['products' => $products]);
         }

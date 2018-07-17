@@ -10,8 +10,8 @@ class Category extends Model
 {
 	protected $table = 'category';
 
-	public function products(){
+	// public function products(){
 
-		return $this->belongsToMany('App\Product','product_category','category_id');
-	}
+	// 	return $this->belongsToMany('App\Product','product_category','category_id');
+	// }
 }
