@@ -31,11 +31,4 @@ class ProductController extends Controller
             return view('product', ['products' => $products]);
         }
     }
-    public function categoryIndex($categoryid)
-    {
-        $category = Category::find($categoryid);
-        foreach ($category->products as $product) {
-                    var_dump($product);
-                }        
-    }
-}
+
