@@ -10,6 +10,10 @@ class ProductSeeder extends Seeder
      *
      * @return void
      */
+
+    /** 
+Producten worden niet meer uitgelezen.. Catergories wel
+    */
     public function run()
     {
       $products = new \App\Product{[
